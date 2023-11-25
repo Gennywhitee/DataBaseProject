@@ -11,7 +11,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Manager {
-    public Manager(){mainQuery = new MainQuery();}
+    public Manager(){
+        mainQuery = new MainQuery();
+    }
+    
     public List<Streamer> query0() throws SQLException {
         mainQuery.startConnection();
         ResultSet resultSet = mainQuery.getAll();
